@@ -1,19 +1,18 @@
 #include <iostream>
+#include <cmath>  // Para usar a função pow()
 
-int main(){
+int main() {
+    float raio, volume;
 
-    float raio, circ, area, pi;
+    // Solicita ao usuário o valor do raio
+    std::cout << "Digite o valor do raio: ";
+    std::cin >> raio;
 
-    std::cout<<"Digite o valor do raio: ";
-    std::cin>>raio;
+    // Calcula o volume da esfera
+    volume = (4.0 / 3.0) * M_PI * pow(raio, 3);
 
-    pi = 3.14159;
+    // Exibe o resultado
+    std::cout << "O volume da esfera é: " << volume << " unidades cúbicas" << std::endl;
 
-    area = pi * (raio * raio);
-
-    circ = 2 * pi * raio;
-
-    std::cout<<"O resultado da area e: "<<area<<std::endl;
-    std::cout<<"O resultado da circunferencia e: "<<circ<<std::endl;
-
+    return 0;
 }
