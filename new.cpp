@@ -1,16 +1,28 @@
 #include <iostream>
+#include <cmath>
 
 int main() {
     
-    float c, f;
+    int a, a_q; b, b_q, c, c_q, soma;
 
-    std::cout<<"Digite a temperatura em Fahreinheit: ";
-    std::cin>>f;
+    std::cout<<"Digite um valor para a: ";
+    std::cin>>a;
 
-    c = 0.555555 * (f-32);
+    std::cout<<"Digite um valor para b: ";
+    std::cin>>b;
 
-    std::cout<<"\nO resultado em Ceusius e: "<<c<<std::endl;
-    std::cout<<"\n"<<std::endl;
+    std::cout<<"Digite um valor para c: ";
+    std::cin>>c;
+
+    a_q = pow(a, 2);
+    b_q = pow(b, 2);
+    c_q = pow(c, 2);
+
+    soma = a_q + b_q + c_q;
+
+    std::cout<<"\nO resultado e: "<<soma<<std::endl;
+    
+
 
     return 0;
 }
