@@ -1,17 +1,15 @@
 #include <iostream>
-#include <cmath>  // Para usar a função pow()
 
 int main() {
     
     float c, f;
 
-    std::cout<<"Digite a temperatura em Celsius: ";
-    std::cin>>c;
+    std::cout<<"Digite a temperatura em Fahreinheit: ";
+    std::cin>>f;
 
-    f = (9 * c + 160)/5;
+    c = 0.555555 * (f-32);
 
-    std::cout<<"Essa é a temperatura em Celsius. "<<c<<std::endl;
-    std::cout<<"Essa é a temperatura em Fahreinheit. "<<f<<std::endl;
+    std::cout<<"\nO resultado em Ceusius e: "<<c<<std::endl;
     std::cout<<"\n"<<std::endl;
 
     return 0;
