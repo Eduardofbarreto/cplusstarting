@@ -3,20 +3,16 @@
 
 int main() {
     
-    float Base, base, altura, area;
+    float c, f;
 
-    std::cout<<"Digite a base: ";
-    std::cin>>Base;
+    std::cout<<"Digite a temperatura em Celsius: ";
+    std::cin>>c;
 
-    std::cout<<"Digite a base baixa: ";
-    std::cin>>base;
+    f = (9 * c + 160)/5;
 
-    std::cout<<"Digite a altura: ";
-    std::cin>>altura;
-
-    area = (Base + base)/2 * altura;
-
-    std::cout<<"A area e: "<<area<<std::endl;
+    std::cout<<"Essa é a temperatura em Celsius. "<<c<<std::endl;
+    std::cout<<"Essa é a temperatura em Fahreinheit. "<<f<<std::endl;
+    std::cout<<"\n"<<std::endl;
 
     return 0;
 }
