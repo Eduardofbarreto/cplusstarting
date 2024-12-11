@@ -2,26 +2,18 @@
 
 int main(){
 
-    float num1, num2, num3, soma, subt, mult, div;
+    float raio, circ, area, pi;
 
-    std::cout<<"Digite um valor para num1: ";
-    std::cin>>num1;
+    std::cout<<"Digite o valor do raio: ";
+    std::cin>>raio;
 
-    std::cout<<"Digite um valor para num2: ";
-    std::cin>>num2;
+    pi = 3.14159;
 
-    std::cout<<"Digite um valor para num3: ";
-    std::cin>>num3;
+    area = pi * (raio * raio);
 
-    //Bloco de resoluções
-    soma = num1 + num2 + num3;
-    subt = num1 - num2 - num3;
-    mult = num1 * num2 * num3;
-    div = num1 / num2 / num3;
+    circ = 2 * pi * raio;
 
-    std::cout<<"\nO resultado da soma e: "<<soma<<std::endl;
-    std::cout<<"O resultado da subtracao e: "<<subt<<std::endl;
-    std::cout<<"O resultado da multiplicacao e: "<<mult<<std::endl;
-    std::cout<<"O resultado da divisao e: "<<div<<std::endl;
+    std::cout<<"O resultado da area e: "<<area<<std::endl;
+    std::cout<<"O resultado da circunferencia e: "<<circ<<std::endl;
 
 }
