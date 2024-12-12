@@ -3,18 +3,19 @@
 
 int main() {
     
-    float litros, km, media;
+    float num1, num2;
 
-    std::cout<<"Digite a quilometragem do veículo: ";
-    std::cin>>km;
+    std::cout<<"Digite o primeiro numero: ";
+    std::cin>>num1;
 
-    std::cout<<"Digite a quantidade de litros abastecida: ";
-    std::cin>>litros;
+    std::cout<<"Digite o segundo numero: ";
+    std::cin>>num2;
 
-
-    media = (km/litros);
-
-    std::cout<<"A media do veículo e de: "<<media<<" km/l."<<std::endl;
+    if (num1 > num2){
+        std::cout<<"O maior valor e: "<<num1<<std::endl;
+    } else {
+        std::cout<<"O maior valor e: "<<num2<<std::endl;
+    }
 
     return 0;
 }
