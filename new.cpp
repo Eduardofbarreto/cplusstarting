@@ -3,19 +3,23 @@
 
 int main() {
     
-    float num1, num2;
+   int cod;
+   float qtd, valor, total;
 
-    std::cout<<"Digite o primeiro numero: ";
-    std::cin>>num1;
+   std::cout<<"Digite o codigo da peca: ";
+   std::cin>>cod;
 
-    std::cout<<"Digite o segundo numero: ";
-    std::cin>>num2;
+   std::cout<<"Digite o valor da peca: ";
+   std::cin>>valor;
 
-    if (num1 > num2){
-        std::cout<<"O maior valor e: "<<num1<<std::endl;
-    } else {
-        std::cout<<"O maior valor e: "<<num2<<std::endl;
-    }
+   std::cout<<"Digite q quantidade de pecas: ";
+   std::cin>>qtd;
 
-    return 0;
+   total = qtd * valor;
+
+   std::cout<<"\nVoce comprou a peca de codigo: "<<cod<<std::endl;
+   std::cout<<"Voce comprou "<<qtd<<"!"<<std::endl;
+   std::cout<<"Valor total de: "<<total<<std::endl;
+
+   return 0;
 }
