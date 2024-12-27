@@ -1,15 +1,18 @@
 #include <iostream>
 
 int main(){
-    float metros, litros;
+    const float lata_metros = 18.00;
+    const float area = 3.0;
+    const float lata_valor = 80.00;
+    float area_pintada;
+    float litros_tinta;
 
-    std::cout<<"Quantos metros serao pintados?"<<std::endl;
-    std::cin>>metros;
+    std::cout<<"Digite a area a ser pintada: "<<std::endl;
+    std::cin>>area_pintada;
 
-    litros = (metros/0.33);
+    litros_tinta = area_pintada / area;
 
-    std::cout<<"Quantidade de metros e de: "<<metros<<std::endl;
-    std::cout<<"Voce precisa de: "<<litros<<" de tinta."<<std::endl;
+    std::cout<<litros_tinta;
 
     return 0;
 }
