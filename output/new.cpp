@@ -1,30 +1,21 @@
 #include <iostream>
 
 int main(){
-    float sal, horas, imposto, inss, sindicato, sal_bruto, sal_liq, desc;
+    float metros, litros;
 
-    std::cout<<"Digite o valor que voce ganha por hora: ";
-    std::cin>>sal;
+    std::cout<<"Quantos metros serao pintados?"<<std::endl;
+    std::cin>>metros;
 
-    std::cout<<"Digite quantidade de horas trabalhadas: ";
-    std::cin>>horas;
+    litros = (metros/0.33);
 
-    sal_bruto = sal * horas;
+    std::cout<<"Quantidade de metros e de: "<<metros<<std::endl;
+    std::cout<<"Voce precisa de: "<<litros<<" de tinta."<<std::endl;
 
-    imposto = sal * 0.11;
-
-    inss = sal * 0.08;
-
-    sindicato = sal * 0.05;
-
-    desc = imposto + inss + sindicato;
-
-    sal_liq = sal_bruto - desc;
-
-    std::cout<<"Seu salario bruto e de: R$ "<<sal_bruto<<std::endl;
-    std::cout<<"O valor do seu IR e de: R$ "<<imposto<<std::endl;
-    std::cout<<"O valor do INSS e de: R$ "<<inss<<std::endl;
-    std::cout<<"O valor do sindicato e de: R$ "<<sindicato<<std::endl;
-    std::cout<<"O salario liquido e de: R$ "<<sal_liq<<std::endl;
+    return 0;
 }
 
+//Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho 
+//em metros quadrados da área a ser pintada.
+//Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e 
+//que a tinta é vendida em latas de 18 litros, que custam R$ 80,00.
+//Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
